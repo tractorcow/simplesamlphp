@@ -177,10 +177,6 @@ abstract class SimpleSAML_Auth_Source
             ),
         ));
 
-        if (is_string($return)) {
-            $state['SimpleSAML_Auth_Default.ReturnURL'] = $return;
-        }
-
         if ($errorURL !== null) {
             $state[SimpleSAML_Auth_State::EXCEPTION_HANDLER_URL] = $errorURL;
         }
